@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Without Bootstrap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .plot-wrapper {
+            margin: 30px 0;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+        .plot-title {
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <h1 style="color: blueviolet;">About Page</h1>
+    <p>This is the about page with integrated Matplotlib visualization.</p>
+
+    <!-- Plot Container -->
+    <div class="plot-wrapper">
+        <h3 class="plot-title">Student Performance Data</h3>
+        <img src="{{ url_for('plot') }}" alt="Student Performance Plot" style="max-width: 100%; height: auto;">
+        <p style="font-size: 0.9em; color: #666;">Dynamic plot generated with Flask and Matplotlib</p>
+    </div>
+
+    <!-- Additional Content -->
+    <div>
+        <p>This page demonstrates how to integrate Python data visualization into a simple HTML template.</p>
+    </div>
+</body>
+</html>
